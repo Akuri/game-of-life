@@ -121,6 +121,7 @@
             } catch (IOException ioex) {
                 //omitted.
             }
+        }
     }
 %>
 <div class="footer">Game Of Life version <%=appVersion%>
