@@ -115,7 +115,12 @@
             appVersion = prop.getProperty("app.version");
         } catch (IOException ioe) {
             ioe.printStackTrace();
-        }
+        }finally {
+            try {
+                inputStream.close();
+            } catch (IOException ioex) {
+                //omitted.
+            }
     }
 %>
 <div class="footer">Game Of Life version <%=appVersion%>
